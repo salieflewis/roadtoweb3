@@ -1,0 +1,48 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/salieflewis/Desktop/Developer/hackathon/contracts/Captain.sol": {
+      "lastModificationDate": 1644107790241,
+      "contentHash": "66fa53d636f4c5f8edcab1bd769d1b24",
+      "sourceName": "contracts/Captain.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0 <0.9.0"
+      ],
+      "artifacts": [
+        "Captain",
+        "Conscript"
+      ]
+    }
+  }
+}
