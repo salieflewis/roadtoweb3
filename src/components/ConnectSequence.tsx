@@ -3,6 +3,7 @@ import { configureLogger } from "@0xsequence/utils";
 import { sequence } from "0xsequence";
 import { Button, Box } from "@chakra-ui/react";
 
+
 const ConnectSequence = () => {
   const network = "mumbai";
   const wallet = new sequence.Wallet(network);
@@ -11,6 +12,7 @@ const ConnectSequence = () => {
     const connectDetails = await wallet.connect({
       app: "Gibble",
       authorize,
+      keepWalletOpened: true
     });
 
     console.warn("connectDetails", { connectDetails });
@@ -35,10 +37,14 @@ const ConnectSequence = () => {
         if (!isValid) throw new Error("sig invalid");
       }
     }
+
+    // console.log("wallet address:", wallet.getAddress())
+    console.log("provider is:", wallet.getProvider())
+
   };
   return (
     <Box p={4}>
-      <Button bg="gray.100" color="blue.500" p={4} alignSelf="flex-end" onClick={() => connect()}>Connect Wallet</Button>
+      <Button bg="gray.100" color="blue.500" p={4} alignSelf="flex-end" onClick={() => connect(true)}>Connect Wallet</Button>
     </Box>
   );
 };

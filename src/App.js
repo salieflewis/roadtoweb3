@@ -1,7 +1,10 @@
 import "./App.css";
 import * as React from "react";
 
+// import ConnectMetamask from "./components/ConnectMetamask"
 import ConnectSequence from "./components/ConnectSequence.tsx";
+import CreateGibble from "./components/CreateGibble"
+import Gibble from "./components/Gibble"
 import Hero from "./components/Hero";
 import Begin from "./components/Begin";
 
@@ -32,8 +35,10 @@ const App = () => {
         <GridItem>
           {/* ROW 2 */}
           <VStack>
-            <Hero />
-            <Begin />
+            {/* <Hero /> */}
+            {/* <Begin /> */}
+            <CreateGibble />
+            <Gibble />
           </VStack>
         </GridItem>
       </Grid>
