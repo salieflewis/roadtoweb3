@@ -18,12 +18,10 @@ const App = () => {
         <GridItem>
           <HStack>
             <Link
-              fontSize="32px"
+              fontSize="40px"
               color="pink.500"
               fontWeight="bold"
-              p={4}
-              href="./home.js"
-              style={{ textDecoration: "none" }}
+              p={6}
             >
               Gibble
             </Link>
@@ -35,10 +33,9 @@ const App = () => {
         <GridItem>
           {/* ROW 2 */}
           <VStack>
-            {/* <Hero /> */}
-            {/* <Begin /> */}
-            <CreateGibble />
-            <Gibble />
+            <Hero />
+            <Begin />
+            {/* <CreateGibble /> */}
           </VStack>
         </GridItem>
       </Grid>
